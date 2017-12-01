@@ -35,7 +35,7 @@ export const store = new Vuex.Store({
       commit('toggleLoading')
       Service.fetch({
         page: state.page,
-        numberOfUsers: 5,
+        numberOfUsers: 9,
       })
         .then(res => {
           commit('toggleLoading')
