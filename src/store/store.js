@@ -23,7 +23,7 @@ export const store = new Vuex.Store({
       state.isLoading = !state.isLoading
     },
     addUsers: (state, { users }) => {
-      state.users = state.users.concat(users)
+      state.users = [ ...state.users, ...users ]
     },
     addPage: state => {
       state.page++
