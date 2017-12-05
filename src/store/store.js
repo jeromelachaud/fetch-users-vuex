@@ -19,8 +19,8 @@ export const store = new Vuex.Store({
   },
 
   mutations: {
-    toggleLoading: state => {
-      state.isLoading = !state.isLoading
+    toggleLoading: (state, flag) => {
+      state.isLoading = flag
     },
     addUsers: (state, { users }) => {
       state.users = [ ...state.users, ...users ]
@@ -32,13 +32,13 @@ export const store = new Vuex.Store({
 
   actions: {
     fetchData({ commit, state }) {
-      commit('toggleLoading')
+      commit('toggleLoading', true)
       Service.fetch({
         page: state.page,
         numberOfUsers: 9,
       })
         .then(res => {
-          commit('toggleLoading')
+          commit('toggleLoading', false)
           commit('addUsers', {
             users: res.results,
           })
