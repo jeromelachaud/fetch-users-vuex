@@ -29,7 +29,7 @@
     margin: 1.5rem auto;
     padding: .5rem;
     border-radius: 5px;
-    color: white;
+    color: #fff;
     background-color: rgb(85, 101, 155);
   }
 

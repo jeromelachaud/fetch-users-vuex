@@ -32,7 +32,7 @@ export default {
     width: 18.75rem;
     height: 14rem;
     margin: .75rem;
-    background-color: white;
+    background-color: #fff;
     border-radius: 2px;
     box-shadow: -1px 4px 6px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     text-align: center;
@@ -54,7 +54,7 @@ export default {
 
     &__date-joined{
       font-size: .75rem;
-      color: grey;
+      color: #808080;
     }
   }
 </style>

@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     height: 3.125rem;
-    color: white;
+    color: #fff;
     background-color: #000;
 
     h1 {
