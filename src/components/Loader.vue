@@ -1,4 +1,4 @@
-<template>
+<template functional>
   <div class="loader">
     <div class="doublebounce1"></div>
     <div class="doublebounce2"></div>

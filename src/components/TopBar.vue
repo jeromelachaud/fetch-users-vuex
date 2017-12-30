@@ -1,4 +1,4 @@
-<template>
+<template functional>
   <div class="topbar">
     <h1>Awesome users</h1>
   </div>
