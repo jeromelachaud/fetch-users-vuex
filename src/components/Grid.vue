@@ -5,16 +5,16 @@
 </template>
 
 <script>
-  import Card from './Card'
-  export default {
-    name: 'Grid',
-    props: [
-      'users',
-    ],
-    components: {
-      Card,
-    },
-  }
+import Card from './Card'
+export default {
+  name: 'Grid',
+  props: [
+    'users',
+  ],
+  components: {
+    Card,
+  },
+}
 </script>
 
 <style lang="scss">

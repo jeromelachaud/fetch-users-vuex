@@ -3,14 +3,14 @@
 </template>
 
 <script>
-  export default {
-    name: 'FetchButton',
-    methods: {
-      onClick() {
-        this.$emit('buttonClicked')
-      },
+export default {
+  name: 'FetchButton',
+  methods: {
+    onClick() {
+      this.$emit('buttonClicked')
     },
-  }
+  },
+}
 </script>
 
 <style lang="scss">
