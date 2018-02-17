@@ -20,10 +20,11 @@ export const store = new Vuex.Store({
 
   mutations: {
     toggleLoading: (state, flag) => {
+      Vue.set(state, 'isLoading', flag)
       state.isLoading = flag
     },
     addUsers: (state, { users }) => {
-      state.users = [ ...state.users, ...users ]
+      Vue.set(state, 'users', users)
     },
     addPage: state => {
       state.page++
